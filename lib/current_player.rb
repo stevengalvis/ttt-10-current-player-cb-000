@@ -16,10 +16,10 @@ def current_player(board)
 
   move_count = turn_count(board)
 
-  if move_count % 2 == 0
+  if move_count.even?
     return "X"
 
-  else
+  else move_count.odd?
     return "O"
 
   end
